@@ -1,0 +1,65 @@
+body {
+    user-select: none;
+}
+
+.body {
+    width: 80%;
+    margin: 100px auto 0 auto;
+}
+
+.btn {
+    margin-top: 30px;
+}
+
+.head {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#mask {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#modal {
+    background: #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 4px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: transform 0.4s;
+    z-index: 2;
+}
+
+#mask.hidden {
+    display: none;
+}
+
+#modal.hidden {
+    transform: translate(0, -700px);
+}
+
+.hide {
+    display: none;
+}
+
+.before {
+    display: none;
+}
+
+.style {
+    text-align: center;
+}
+
+.after {
+    display: none;
+}
